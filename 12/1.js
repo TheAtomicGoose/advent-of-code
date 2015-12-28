@@ -20,6 +20,7 @@ function sumObject(file, callback) {
  * parseObject() takes an object and sums every number in the
  * object, includeing those in nested objects or arrays.
  * @param {Object} obj the object to sum
+ * @return {Number}    the sum of the object's numbers
  */
 function parseObject(obj) {
     var currentTotal = 0;

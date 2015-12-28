@@ -3,6 +3,7 @@ var fs = require("fs");
 /**
  * Adds a new function to Object.prototype that checks if the object contains a value
  * @param {Anything} val the value to check for inside of this
+ * @return {Boolean}     whether or not the object contains the value
  */
 Object.prototype.hasOwnValue = function(val) {
     for (var prop in this) {
@@ -31,6 +32,7 @@ function sumObject(file, callback) {
  * parseObject() takes an object and sums every number in the
  * object, includeing those in nested objects or arrays.
  * @param {Object} obj the object to sum
+ * @return {Number}    the sum of the object's numbers
  */
 function parseObject(obj, total) {
     var currentTotal= total;
